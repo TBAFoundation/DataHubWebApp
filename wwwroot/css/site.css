@@ -1,0 +1,119 @@
+/* Define base colors and sizes for easy maintenance */
+:root {
+    --base-font-family: Arial, sans-serif;
+    --base-font-size: 16px;
+    --large-font-size: 18px;
+    --background-color-base: #e8e8e8; /* Lighter grey for overall background */
+    --main-content-bg-color: #fcfcfc; /* Softer white for main content */
+    --text-color: #333;
+    --link-color: #2b8af9;
+    --link-hover-color: #1c5ea8;
+    --button-bg-color: #2b8af9;
+    --button-bg-hover-color: #1c5ea8;
+    --focus-ring-color: rgba(37, 140, 251, 0.5);
+    --form-control-border: #cccccc;
+    --form-control-focus-border: #2b8af9;
+    --error-color: #ff0000;
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Lightened the shadow for a subtler effect */
+}
+
+/* Set default font and background color */
+html {
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
+    background-color: var(--background-color-base);
+    position: relative;
+    min-height: 100%;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    html {
+        font-size: var(--large-font-size);
+    }
+}
+
+/* Add margin and padding to the body */
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+/* Set styles for main content area */
+.main-content {
+    background-color: var(--main-content-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Style headings */
+h1, h2, h3 {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Style links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+        color: var(--link-hover-color);
+    }
+
+/* Style buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--button-bg-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .btn:hover {
+        background-color: var(--button-bg-hover-color);
+    }
+
+    /* Focus styles for buttons, form controls, and links */
+    .btn:focus,
+    .btn:active:focus,
+    .btn-link.nav-link:focus,
+    .form-control:focus,
+    .form-check-input:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.2rem var(--focus-ring-color);
+    }
+
+/* Style form elements */
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--form-control-border);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease-in-out;
+}
+
+    .form-control:focus {
+        border-color: var(--form-control-focus-border);
+    }
+
+/* Style form labels */
+.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style error messages */
+.error-message {
+    color: var(--error-color);
+    margin-top: 5px;
+}

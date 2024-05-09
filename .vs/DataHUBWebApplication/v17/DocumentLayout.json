@@ -1,0 +1,650 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\context\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:context\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\data\\interface\\idatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:data\\interface\\idatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\student\\courseregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\student\\courseregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\student\\studentsignin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\student\\studentsignin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\student\\studentsignup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\student\\studentsignup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\instructor\\coursemanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\instructor\\coursemanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\data\\datarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:data\\datarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\data\\datahubwebapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:data\\datahubwebapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\instructor\\instructorsignup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\instructor\\instructorsignup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\views\\instructor\\instructorsignin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:views\\instructor\\instructorsignin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\data\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:data\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\data\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:data\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\datahubwebapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:datahubwebapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|c:\\users\\dell\\desktop\\mgqsc#class\\datahubwebapplication\\data\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5717605-361A-45B6-AF73-89859E7D231C}|DataHUBWebApplication.csproj|solutionrelative:data\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\DataHUBWebApplication.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataHUBWebApplication.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Context\\DataContext.cs",
+              "RelativeDocumentMoniker": "Context\\DataContext.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Context\\DataContext.cs",
+              "RelativeToolTip": "Context\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T23:05:30.555Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T21:26:15.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAADgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T22:24:37.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T23:38:09.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-06T21:46:07.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAAC8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T22:36:35.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDataRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\Interface\\IDataRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Interface\\IDataRepository.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\Interface\\IDataRepository.cs",
+              "RelativeToolTip": "Data\\Interface\\IDataRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T22:44:14.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T13:40:54.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-07T22:10:52.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T23:20:38.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "Controllers\\CoursesController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T13:45:47.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Controllers\\CourseController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T00:50:04.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Courses\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Courses\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T13:40:25.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Courses\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Details.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Courses\\Details.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T13:40:00.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InstructorController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Controllers\\InstructorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InstructorController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Controllers\\InstructorController.cs",
+              "RelativeToolTip": "Controllers\\InstructorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T22:18:30.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Courses\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Create.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Courses\\Create.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T13:35:49.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Courses\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Courses\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T13:37:42.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CourseRegistration.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Student\\CourseRegistration.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\CourseRegistration.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Student\\CourseRegistration.cshtml",
+              "RelativeToolTip": "Views\\Student\\CourseRegistration.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T22:21:35.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StudentSignIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Student\\StudentSignIn.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\StudentSignIn.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Student\\StudentSignIn.cshtml",
+              "RelativeToolTip": "Views\\Student\\StudentSignIn.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T22:20:25.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T22:17:42.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Dashboard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T22:08:33.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T21:40:33.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T11:31:03.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StudentSignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Student\\StudentSignUp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\StudentSignUp.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Student\\StudentSignUp.cshtml",
+              "RelativeToolTip": "Views\\Student\\StudentSignUp.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T22:19:55.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CourseManagement.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Instructor\\CourseManagement.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructor\\CourseManagement.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Instructor\\CourseManagement.cshtml",
+              "RelativeToolTip": "Views\\Instructor\\CourseManagement.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T22:23:30.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DataRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\DataRepository.cs",
+              "RelativeDocumentMoniker": "Data\\DataRepository.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\DataRepository.cs",
+              "RelativeToolTip": "Data\\DataRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T23:56:05.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DataHUBWebApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\DataHUBWebApplicationContext.cs",
+              "RelativeDocumentMoniker": "Data\\DataHUBWebApplicationContext.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\DataHUBWebApplicationContext.cs",
+              "RelativeToolTip": "Data\\DataHUBWebApplicationContext.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAiwEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T22:48:24.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Instructor.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Models\\Instructor.cs",
+              "RelativeDocumentMoniker": "Models\\Instructor.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Models\\Instructor.cs",
+              "RelativeToolTip": "Models\\Instructor.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T23:07:25.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "InstructorSignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Instructor\\InstructorSignUp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructor\\InstructorSignUp.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Instructor\\InstructorSignUp.cshtml",
+              "RelativeToolTip": "Views\\Instructor\\InstructorSignUp.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T22:22:23.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "InstructorSignIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Instructor\\InstructorSignIn.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructor\\InstructorSignIn.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Views\\Instructor\\InstructorSignIn.cshtml",
+              "RelativeToolTip": "Views\\Instructor\\InstructorSignIn.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T22:22:55.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CourseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\CourseRepository.cs",
+              "RelativeDocumentMoniker": "Data\\CourseRepository.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\CourseRepository.cs",
+              "RelativeToolTip": "Data\\CourseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T23:01:23.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "InstructorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\InstructorRepository.cs",
+              "RelativeDocumentMoniker": "Data\\InstructorRepository.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\InstructorRepository.cs",
+              "RelativeToolTip": "Data\\InstructorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T23:02:53.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAkwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T23:06:47.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T23:08:48.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DataHUBWebApplication.csproj",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\DataHUBWebApplication.csproj",
+              "RelativeDocumentMoniker": "DataHUBWebApplication.csproj",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\DataHUBWebApplication.csproj",
+              "RelativeToolTip": "DataHUBWebApplication.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-06T21:58:22.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "Data\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\Data\\StudentRepository.cs",
+              "RelativeToolTip": "Data\\StudentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T23:03:47.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DataHUBWebApplication.csproj.user",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\DataHUBWebApplication.csproj.user",
+              "RelativeDocumentMoniker": "DataHUBWebApplication.csproj.user",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\MGQSC#CLASS\\DataHUBWebApplication\\DataHUBWebApplication.csproj.user",
+              "RelativeToolTip": "DataHUBWebApplication.csproj.user",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-05-06T21:41:33.615Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
