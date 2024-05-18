@@ -50,13 +50,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "ConsoleTables": {
+            "AspNetCoreHero.ToastNotification": {
               "target": "Package",
-              "version": "[2.6.1, )"
+              "version": "[1.1.0, )"
             },
-            "Humanizer.Core": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.14.1, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -78,19 +78,7 @@
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql.Design": {
-              "target": "Package",
-              "version": "[1.1.2, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql.Json.Microsoft": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Pomelo.JsonObject": {
-              "target": "Package",
-              "version": "[2.2.1, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
