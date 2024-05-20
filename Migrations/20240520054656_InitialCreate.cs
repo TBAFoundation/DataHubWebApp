@@ -39,17 +39,20 @@ namespace DataHUBWebApplication.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    UserID = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
+                    UserId = table.Column<Guid>(type: "char(36)", nullable: false),
                     FirstName = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
                     LastName = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
                     Email = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: false),
+                    PhoneNumber = table.Column<string>(type: "varchar(13)", maxLength: 13, nullable: false),
                     Password = table.Column<string>(type: "longtext", nullable: false),
                     UserType = table.Column<int>(type: "int", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+                    GenderType = table.Column<int>(type: "int", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.UserID);
+                    table.PrimaryKey("PK_Users", x => x.UserId);
                 })
                 .Annotation("MySQL:Charset", "utf8mb4");
 
@@ -83,9 +86,10 @@ namespace DataHUBWebApplication.Migrations
                 {
                     EnrollmentID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    UserID = table.Column<string>(type: "varchar(50)", nullable: false),
+                    UserID = table.Column<string>(type: "longtext", nullable: false),
                     CourseID = table.Column<int>(type: "int", nullable: false),
-                    EnrollmentDate = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+                    EnrollmentDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    UserId = table.Column<Guid>(type: "char(36)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -97,10 +101,10 @@ namespace DataHUBWebApplication.Migrations
                         principalColumn: "CourseID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Enrollments_Users_UserID",
-                        column: x => x.UserID,
+                        name: "FK_Enrollments_Users_UserId",
+                        column: x => x.UserId,
                         principalTable: "Users",
-                        principalColumn: "UserID",
+                        principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySQL:Charset", "utf8mb4");
@@ -111,9 +115,9 @@ namespace DataHUBWebApplication.Migrations
                 column: "CourseID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Enrollments_UserID",
+                name: "IX_Enrollments_UserId",
                 table: "Enrollments",
-                column: "UserID");
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Materials_CourseID",

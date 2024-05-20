@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataHUBWebApplication.Migrations
 {
     [DbContext(typeof(DataHubContext))]
-    [Migration("20240518002105_InitialCreate")]
+    [Migration("20240520054656_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -73,13 +73,16 @@ namespace DataHUBWebApplication.Migrations
 
                     b.Property<string>("UserID")
                         .IsRequired()
-                        .HasColumnType("varchar(50)");
+                        .HasColumnType("longtext");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("char(36)");
 
                     b.HasKey("EnrollmentID");
 
                     b.HasIndex("CourseID");
 
-                    b.HasIndex("UserID");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Enrollments");
                 });
@@ -117,9 +120,9 @@ namespace DataHUBWebApplication.Migrations
 
             modelBuilder.Entity("DataHUBWebApplication.Models.User", b =>
                 {
-                    b.Property<string>("UserID")
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
+                    b.Property<Guid>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
@@ -134,6 +137,9 @@ namespace DataHUBWebApplication.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
+                    b.Property<int>("GenderType")
+                        .HasColumnType("int");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -143,10 +149,18 @@ namespace DataHUBWebApplication.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(13)
+                        .HasColumnType("varchar(13)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<int>("UserType")
                         .HasColumnType("int");
 
-                    b.HasKey("UserID");
+                    b.HasKey("UserId");
 
                     b.ToTable("Users");
                 });
@@ -161,7 +175,7 @@ namespace DataHUBWebApplication.Migrations
 
                     b.HasOne("DataHUBWebApplication.Models.User", "User")
                         .WithMany("Enrollments")
-                        .HasForeignKey("UserID")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
