@@ -103,3 +103,40 @@ footer {
     font-size: 0.8em;
     border-top: 1px solid var(--border-color);
 }
+
+/* Form Styles */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0,86,179,0.1);
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.text-danger {
+    color: red;
+    font-size: 0.9em;
+}

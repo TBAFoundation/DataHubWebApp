@@ -13,9 +13,9 @@ builder.Services.AddDbContext<DataHubContext>(options =>
 builder.Services.AddControllersWithViews();
 
 // Add application services
-builder.Services.AddScoped<ICourseService, CourseService>();
-builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
-builder.Services.AddScoped<IMaterialService, MaterialService>();
+// builder.Services.AddScoped<ICourseService, CourseService>();
+// builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
+// builder.Services.AddScoped<IMaterialService, MaterialService>();
 builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();

@@ -14,7 +14,7 @@ public class DataHubContextFactory : IDesignTimeDbContextFactory<DataHubContext>
             .Build();
 
         var optionsBuilder = new DbContextOptionsBuilder<DataHubContext>();
-        var connectionString = configuration.GetConnectionString("DHConnectionStrings");
+        var connectionString = configuration.GetConnectionString("DHConnectionStrings")!;
 
         optionsBuilder.UseMySQL(connectionString);
 
