@@ -11,16 +11,16 @@ namespace DataHUBWebApplication.Models
         [Display(Name = "Course Title")]
         [Required(ErrorMessage = "Title is required.")]
         [StringLength(255, ErrorMessage = "Title cannot exceed 255 characters.")]
-        public string CourseName { get; set; }
+        public string CourseName { get; set; } = default!;
 
         [Display(Name = "Description")]
         [Required(ErrorMessage = "Description is required.")]
-        public string Description { get; set; }
+        public string Description { get; set; } = default!;
 
         [Display(Name = "Category")]
         [Required(ErrorMessage = "Category is required.")]
         [StringLength(100, ErrorMessage = "Category cannot exceed 100 characters.")]
-        public string Category { get; set; }
+        public string Category { get; set; } = default!;
 
         [Display(Name = "Price")]
         [Required(ErrorMessage = "Price is required.")]
@@ -40,7 +40,7 @@ namespace DataHUBWebApplication.Models
         public DateTime CreatedAt { get; set; }
 
         // Navigation properties
-        public ICollection<Enrollment> Enrollments { get; set; }
-        public ICollection<Materials> Material { get; set; }
+        public ICollection<Enrollment> Enrollments { get; set; } = default!;
+        public ICollection<Materials> Material { get; set; } = default!;
     }
 }

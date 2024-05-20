@@ -1,79 +1,82 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using DataHUBWebApplication.Data;
-using DataHUBWebApplication.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using DataHUBWebApplication.DTO;
+using DataHUBWebApplication.Interface;
 
-namespace DataHUBWebApplication.Controllers
+namespace DataHUBWebApplication.Controllers;
+
+public class UsersController : Controller
 {
-    public class UsersController : Controller
-    {
-        private readonly DataHubContext _context;
+    private readonly IUserService _userService;
 
-        public UsersController(DataHubContext context)
+        public UsersController(IUserService userService)
         {
-            _context = context;
+            _userService = userService;
         }
 
         // GET: Users
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Users.ToListAsync());
+            var users = await _userService.GetUsersAsync();
+            return View(users);
         }
 
         // GET: Users/Details/5
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(Guid id)
         {
-            if (id == null)
+            var userDto = await _userService.GetUserDetailsAsync(id);
+            if (userDto == null)
             {
                 return NotFound();
             }
-
-            var user = await _context.Users
-                .FirstOrDefaultAsync(m => m.UserID == id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            return View(user);
+            return View(userDto);
         }
 
-        // GET: Users/Create
-        public IActionResult Create()
+        // GET: Users/Register
+        public IActionResult Register()
         {
             return View();
         }
 
-        // POST: Users/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Users/Register
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserID,FirstName,LastName,Email,Password,UserType,CreatedAt")] User user)
+        public async Task<IActionResult> Register(UserRegistrationDto userDto)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(user);
-                await _context.SaveChangesAsync();
+                if (userDto.Password != userDto.ConfirmPassword)
+                {
+                    ModelState.AddModelError("ConfirmPassword", "The password and confirmation password do not match.");
+                    return View(userDto);
+                }
+
+                await _userService.RegisterUserAsync(userDto);
                 return RedirectToAction(nameof(Index));
             }
-            return View(user);
+            return View(userDto);
+        }
+
+        // POST: Users/SignIn
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SignIn(UserSignInDto signInDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var signInResult = await _userService.SignInAsync(signInDto);
+                if (signInResult)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+            }
+            return View(signInDto);
         }
 
         // GET: Users/Edit/5
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var user = await _context.Users.FindAsync(id);
+            var user = await _userService.GetUserDetailsAsync(id);
             if (user == null)
             {
                 return NotFound();
@@ -82,50 +85,27 @@ namespace DataHUBWebApplication.Controllers
         }
 
         // POST: Users/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("UserID,FirstName,LastName,Email,Password,UserType,CreatedAt")] User user)
+        public async Task<IActionResult> Edit(Guid id, UserUpdateDto userDto)
         {
-            if (id != user.UserID)
+            if (id != userDto.UserId)
             {
                 return NotFound();
             }
 
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(user);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!UserExists(user.UserID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                await _userService.UpdateUserAsync(id, userDto);
                 return RedirectToAction(nameof(Index));
             }
-            return View(user);
+            return View(userDto);
         }
 
         // GET: Users/Delete/5
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(Guid id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var user = await _context.Users
-                .FirstOrDefaultAsync(m => m.UserID == id);
+            var user = await _userService.GetUserDetailsAsync(id);
             if (user == null)
             {
                 return NotFound();
@@ -137,21 +117,9 @@ namespace DataHUBWebApplication.Controllers
         // POST: Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var user = await _context.Users.FindAsync(id);
-            if (user != null)
-            {
-                _context.Users.Remove(user);
-            }
-
-            await _context.SaveChangesAsync();
+            await _userService.DeleteUserAsync(id);
             return RedirectToAction(nameof(Index));
         }
-
-        private bool UserExists(string id)
-        {
-            return _context.Users.Any(e => e.UserID == id);
-        }
-    }
 }

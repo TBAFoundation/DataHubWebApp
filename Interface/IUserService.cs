@@ -1,11 +1,12 @@
-﻿using DataHUBWebApplication.Models;
+﻿using DataHUBWebApplication.DTO;
 namespace DataHUBWebApplication.Interface;
 
 public interface IUserService
 {
-    Task<User> GetUserByIdAsync(string userId);
-    Task<IEnumerable<User>> GetAllUsersAsync();
-    Task AddUserAsync(User user);
-    Task UpdateUserAsync(User user);
-    Task DeleteUserAsync(string userId);
+    Task<IEnumerable<UserDisplayDto>> GetUsersAsync();
+    Task<UserDisplayDto> GetUserDetailsAsync(Guid id);
+    Task RegisterUserAsync(UserRegistrationDto userDto);
+    Task<bool> SignInAsync(UserSignInDto signInDto);
+    Task UpdateUserAsync(Guid id, UserUpdateDto userDto);
+    Task DeleteUserAsync(Guid id);
 }

@@ -15,7 +15,7 @@ public class Materials
     [Display(Name = "Title")]
     [Required(ErrorMessage = "Title is required.")]
     [StringLength(255, ErrorMessage = "Title cannot exceed 255 characters.")]
-    public string Title { get; set; }
+    public string Title { get; set; } = default!;
 
     [Display(Name = "Type")]
     [Required(ErrorMessage = "Type is required.")]
@@ -23,11 +23,11 @@ public class Materials
 
     [Display(Name = "Content")]
     [Required(ErrorMessage = "Content is required.")]
-    public string Content { get; set; }
+    public string Content { get; set; } = default!;
 
     [Display(Name = "Created At")]
     public DateTime CreatedAt { get; set; }
 
     // Navigation property
-    public Course Course { get; set; }
+    public Course Course { get; set; } = default!;
 }

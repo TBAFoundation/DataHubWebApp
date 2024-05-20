@@ -9,7 +9,7 @@ public class Enrollment
 
     [Display(Name = "User ID")]
     [Required(ErrorMessage = "User ID is required.")]
-    public string UserID { get; set; }
+    public string UserID { get; set; } = default!;
 
     [Display(Name = "Course ID")]
     [Required(ErrorMessage = "Course ID is required.")]
@@ -19,6 +19,6 @@ public class Enrollment
     public DateTime EnrollmentDate { get; set; }
     
     // Navigation properties
-    public User User { get; set; }
-    public Course Course { get; set; }
+    public User User { get; set; } = default!;
+    public Course Course { get; set; } = default!;
 }

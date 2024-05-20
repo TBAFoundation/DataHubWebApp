@@ -1,0 +1,54 @@
+﻿@model DataHUBWebApplication.DTO.UserRegistrationDto
+
+<h1>Register</h1>
+
+<form asp-action="Register" method="post">
+    <div>
+        <label asp-for="FirstName">First Name</label>
+        <input asp-for="FirstName" />
+        <span asp-validation-for="FirstName"></span>
+    </div>
+    <div>
+        <label asp-for="LastName">Last Name</label>
+        <input asp-for="LastName" />
+        <span asp-validation-for="LastName"></span>
+    </div>
+    <div>
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="PhoneNumber">Phone Number</label>
+        <input asp-for="PhoneNumber" />
+        <span asp-validation-for="PhoneNumber"></span>
+    </div>
+    <div>
+        <label asp-for="Password">Password</label>
+        <input asp-for="Password" type="password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label asp-for="ConfirmPassword">Confirm Password</label>
+        <input asp-for="ConfirmPassword" type="password" />
+        <span asp-validation-for="ConfirmPassword"></span>
+    </div>
+    <div>
+        <label asp-for="UserType">User Type</label>
+        <select asp-for="UserType" asp-items="Html.GetEnumSelectList<DataHUBWebApplication.Enum.UserType>()">
+            <option value="">Select User Type</option>
+        </select>
+        <span asp-validation-for="UserType"></span>
+    </div>
+    <div>
+        <label asp-for="GenderType">Gender</label>
+        <select asp-for="GenderType" asp-items="Html.GetEnumSelectList<DataHUBWebApplication.Enum.GenderType>()">
+            <option value="">Select Gender</option>
+        </select>
+        <span asp-validation-for="GenderType"></span>
+    </div>
+    <button type="submit">Register</button>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

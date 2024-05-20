@@ -1,20 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using DataHUBWebApplication.Data;
 using DataHUBWebApplication.Interface;
-using DataHUBWebApplication.Repositories;
 using DataHUBWebApplication.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<DataHubContext>(options =>
-    options.UseMySQL(connectionString: builder.Configuration.GetConnectionString("DHConnectionStrings") ?? throw new InvalidOperationException("Connection string 'DataHUBWebApplicationContext' not found.")));
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<ICourseRepository, CourseRepository>();
-builder.Services.AddScoped<IEnrollmentRepository, EnrollmentRepository>();
-builder.Services.AddScoped<IMaterialRepository, MaterialRepository>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddDbContext<DataHubContext>(options =>
+    options.UseMySQL(builder.Configuration.GetConnectionString("DHConnectionStrings") ?? throw new InvalidOperationException("Connection string 'DataHUBWebApplicationContext' not found.")));
 
+builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICourseService, CourseService>();
 builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
 builder.Services.AddScoped<IMaterialService, MaterialService>();

@@ -69,10 +69,10 @@
                     </form>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("SignIn", "Account")">Sign In</a>
+                            <a class="nav-link" asp-controller="Users" asp-action="SignIn">Sign In</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary" href="@Url.Action("GetStarted", "Account")">Get Started</a>
+                            <a class="nav-link" asp-controller="Users" asp-action="Register">Get Started</a>
                         </li>
                     </ul>
                 </div>
