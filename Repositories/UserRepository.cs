@@ -7,5 +7,5 @@ namespace DataHUBWebApplication.Repositories;
 
 public class UserRepository : IUserRepository
 {
-    
+
 }

@@ -39,7 +39,7 @@ namespace DataHUBWebApplication.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    UserId = table.Column<Guid>(type: "char(36)", nullable: false),
+                    UserId = table.Column<string>(type: "varchar(255)", nullable: false),
                     FirstName = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
                     LastName = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false),
                     Email = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: false),
@@ -86,10 +86,9 @@ namespace DataHUBWebApplication.Migrations
                 {
                     EnrollmentID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    UserID = table.Column<string>(type: "longtext", nullable: false),
+                    UserID = table.Column<string>(type: "varchar(255)", nullable: false),
                     CourseID = table.Column<int>(type: "int", nullable: false),
-                    EnrollmentDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    UserId = table.Column<Guid>(type: "char(36)", nullable: false)
+                    EnrollmentDate = table.Column<DateTime>(type: "datetime(6)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -101,8 +100,8 @@ namespace DataHUBWebApplication.Migrations
                         principalColumn: "CourseID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Enrollments_Users_UserId",
-                        column: x => x.UserId,
+                        name: "FK_Enrollments_Users_UserID",
+                        column: x => x.UserID,
                         principalTable: "Users",
                         principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
@@ -115,14 +114,20 @@ namespace DataHUBWebApplication.Migrations
                 column: "CourseID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Enrollments_UserId",
+                name: "IX_Enrollments_UserID",
                 table: "Enrollments",
-                column: "UserId");
+                column: "UserID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Materials_CourseID",
                 table: "Materials",
                 column: "CourseID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Users_Email",
+                table: "Users",
+                column: "Email",
+                unique: true);
         }
 
         /// <inheritdoc />

@@ -5,5 +5,5 @@ namespace DataHUBWebApplication.Interface;
 
 public interface ICourseRepository
 {
-    
+
 }

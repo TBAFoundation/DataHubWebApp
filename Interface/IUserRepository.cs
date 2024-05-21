@@ -4,5 +4,5 @@ namespace DataHUBWebApplication.Interface;
 
 public interface IUserRepository
 {
-    
+
 }

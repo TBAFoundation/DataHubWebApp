@@ -6,7 +6,7 @@ namespace DataHUBWebApplication.DTO;
 public class UserDisplayDto
 {
     [Key]
-    public Guid UserId { get; set; }
+    public string UserId { get; set; } = default!;
 
     [Display(Name = "First Name")]
     [Required(ErrorMessage = "First name is required.")]

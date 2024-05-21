@@ -17,7 +17,7 @@ public class Enrollment
 
     [Display(Name = "Enrollment Date")]
     public DateTime EnrollmentDate { get; set; }
-    
+
     // Navigation properties
     public User User { get; set; } = default!;
     public Course Course { get; set; } = default!;

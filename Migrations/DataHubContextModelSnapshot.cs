@@ -70,16 +70,13 @@ namespace DataHUBWebApplication.Migrations
 
                     b.Property<string>("UserID")
                         .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("char(36)");
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("EnrollmentID");
 
                     b.HasIndex("CourseID");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserID");
 
                     b.ToTable("Enrollments");
                 });
@@ -117,9 +114,8 @@ namespace DataHUBWebApplication.Migrations
 
             modelBuilder.Entity("DataHUBWebApplication.Models.User", b =>
                 {
-                    b.Property<Guid>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
+                    b.Property<string>("UserId")
+                        .HasColumnType("varchar(255)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
@@ -159,6 +155,9 @@ namespace DataHUBWebApplication.Migrations
 
                     b.HasKey("UserId");
 
+                    b.HasIndex("Email")
+                        .IsUnique();
+
                     b.ToTable("Users");
                 });
 
@@ -172,7 +171,7 @@ namespace DataHUBWebApplication.Migrations
 
                     b.HasOne("DataHUBWebApplication.Models.User", "User")
                         .WithMany("Enrollments")
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

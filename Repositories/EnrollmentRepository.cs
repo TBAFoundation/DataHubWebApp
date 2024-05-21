@@ -7,5 +7,5 @@ namespace DataHUBWebApplication.Repositories;
 
 public class EnrollmentRepository : IEnrollmentRepository
 {
-    
+
 }

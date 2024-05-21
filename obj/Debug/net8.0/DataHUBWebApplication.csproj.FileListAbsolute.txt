@@ -275,3 +275,4 @@ C:\Users\DELL\Desktop\MGQSC#CLASS\DataHUBWebApplication\bin\Debug\net8.0\Microso
 C:\Users\DELL\Desktop\MGQSC#CLASS\DataHUBWebApplication\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\DELL\Desktop\MGQSC#CLASS\DataHUBWebApplication\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\DELL\Desktop\MGQSC#CLASS\DataHUBWebApplication\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\DELL\Desktop\MGQSC#CLASS\DataHUBWebApplication\bin\Debug\net8.0\schemas\appsettings.schema.json

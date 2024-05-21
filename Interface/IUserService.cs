@@ -4,9 +4,9 @@ namespace DataHUBWebApplication.Interface;
 public interface IUserService
 {
     Task<IEnumerable<UserDisplayDto>> GetUsersAsync();
-    Task<UserDisplayDto> GetUserDetailsAsync(Guid id);
+    Task<UserDisplayDto?> GetUserDetailsAsync(string id);
     Task RegisterUserAsync(UserRegistrationDto userDto);
     Task<bool> SignInAsync(UserSignInDto signInDto);
-    Task UpdateUserAsync(Guid id, UserUpdateDto userDto);
-    Task DeleteUserAsync(Guid id);
+    Task UpdateUserAsync(string id, UserUpdateDto userDto);
+    Task DeleteUserAsync(string id);
 }
