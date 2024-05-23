@@ -62,9 +62,28 @@
                     <span asp-validation-for="UserType" class="text-danger"></span>
                 </div>
                 <div class="form-group">
+                    <label asp-for="Address" class="control-label"></label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LevelOfEducation" class="control-label"></label>
+                    <input asp-for="LevelOfEducation" class="form-control" />
+                    <span asp-validation-for="LevelOfEducation" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DateOfBirth" class="control-label"></label>
+                    <input asp-for="DateOfBirth" class="form-control" type="date" />
+                    <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                </div>
+                <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">Register</button>
                 </div>
             </form>
         </div>
     </div>
 </main>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

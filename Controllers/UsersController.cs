@@ -57,6 +57,12 @@ public class UsersController : Controller
         return View(userDto);
     }
 
+    // GET: Users/SignIn
+    public IActionResult SignIn()
+    {
+        return View();
+    }
+
     // POST: Users/SignIn
     [HttpPost]
     [ValidateAntiForgeryToken]

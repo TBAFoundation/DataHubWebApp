@@ -30,10 +30,10 @@ public class UserService : IUserService
             .ToListAsync();
     }
 
-    public async Task<UserDisplayDto?> GetUserDetailsAsync(string Id)
+    public async Task<UserDisplayDto?> GetUserDetailsAsync(string id)
     {
         return await _context.Users
-            .Where(u => u.UserId == Id)
+            .Where(u => u.UserId == id)
             .Select(u => new UserDisplayDto
             {
                 UserId = u.UserId,
@@ -58,11 +58,6 @@ public class UserService : IUserService
             throw new ArgumentException("An account with this email already exists.");
         }
 
-        if (await _context.Users.AnyAsync(u => u.Email == userDto.Email && u.UserType == userDto.UserType))
-        {
-            throw new ArgumentException("A user with this email is already registered as this user type.");
-        }
-
         var userId = await UserIdGenerator.GenerateUniqueUserIdAsync(_context);
 
         var user = new User
@@ -75,14 +70,15 @@ public class UserService : IUserService
             PhoneNumber = userDto.PhoneNumber,
             GenderType = userDto.GenderType,
             UserType = userDto.UserType,
+            Address = userDto.Address,
+            LevelOfEducation = userDto.LevelOfEducation,
+            DateOfBirth = userDto.DateOfBirth,
             CreatedAt = DateTime.UtcNow
         };
 
         _context.Add(user);
         await _context.SaveChangesAsync();
-        Console.WriteLine("Registration Successful");
     }
-
 
     public async Task<bool> SignInAsync(UserSignInDto signInDto)
     {
@@ -103,6 +99,9 @@ public class UserService : IUserService
             user.PhoneNumber = userDto.PhoneNumber;
             user.GenderType = userDto.GenderType;
             user.UserType = userDto.UserType;
+            user.Address = userDto.Address;
+            user.LevelOfEducation = userDto.LevelOfEducation;
+            user.DateOfBirth = userDto.DateOfBirth;
             user.UpdatedAt = DateTime.UtcNow;
 
             await _context.SaveChangesAsync();
@@ -135,6 +134,5 @@ public class UserService : IUserService
 
             return userId;
         }
-
     }
 }

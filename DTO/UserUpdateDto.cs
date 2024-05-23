@@ -38,4 +38,19 @@ public class UserUpdateDto : BaseEntity
     [Display(Name = "User Type")]
     [Required(ErrorMessage = "User type is required.")]
     public UserType UserType { get; set; }
+
+    [Display(Name = "Address")]
+    [Required(ErrorMessage = "Address is required.")]
+    [StringLength(255, ErrorMessage = "Address cannot exceed 255 characters.")]
+    public string Address { get; set; } = default!;
+
+    [Display(Name = "Level of Education")]
+    [Required(ErrorMessage = "Level of education is required.")]
+    [StringLength(50, ErrorMessage = "Level of education cannot exceed 50 characters.")]
+    public string LevelOfEducation { get; set; } = default!;
+
+    [Display(Name = "Date of Birth")]
+    [Required(ErrorMessage = "Date of birth is required.")]
+    [DataType(DataType.Date)]
+    public DateTime DateOfBirth { get; set; }
 }

@@ -21,19 +21,20 @@ public class UserRegistrationDto
     [StringLength(255, ErrorMessage = "Email cannot exceed 255 characters.")]
     public string Email { get; set; } = default!;
 
-    [Display(Name = "Phonenumber")]
-    [Required(ErrorMessage = "Phonenumber is required.")]
-    [StringLength(13, ErrorMessage = "Phonenumber cannot exceed 13 characters.")]
+    [Display(Name = "Phone Number")]
+    [Required(ErrorMessage = "Phone number is required.")]
+    [StringLength(13, ErrorMessage = "Phone number cannot exceed 13 characters.")]
     public string PhoneNumber { get; set; } = default!;
-
-    [Compare("Password", ErrorMessage = "Password and confirmation password do not match")]
-    [DataType(DataType.Password)]
-    public string ConfirmPassword { get; set; } = default!;
 
     [Display(Name = "Password")]
     [Required(ErrorMessage = "Password is required.")]
     [DataType(DataType.Password)]
     public string Password { get; set; } = default!;
+
+    [Display(Name = "Confirm Password")]
+    [Compare("Password", ErrorMessage = "Password and confirmation password do not match.")]
+    [DataType(DataType.Password)]
+    public string ConfirmPassword { get; set; } = default!;
 
     [Display(Name = "Gender")]
     [Required(ErrorMessage = "Gender type is required.")]
@@ -43,4 +44,18 @@ public class UserRegistrationDto
     [Required(ErrorMessage = "User type is required.")]
     public UserType UserType { get; set; }
 
+    [Display(Name = "Address")]
+    [Required(ErrorMessage = "Address is required.")]
+    [StringLength(255, ErrorMessage = "Address cannot exceed 255 characters.")]
+    public string Address { get; set; } = default!;
+
+    [Display(Name = "Level of Education")]
+    [Required(ErrorMessage = "Level of education is required.")]
+    [StringLength(50, ErrorMessage = "Level of education cannot exceed 50 characters.")]
+    public string LevelOfEducation { get; set; } = default!;
+
+    [Display(Name = "Date of Birth")]
+    [Required(ErrorMessage = "Date of birth is required.")]
+    [DataType(DataType.Date)]
+    public DateTime DateOfBirth { get; set; }
 }
