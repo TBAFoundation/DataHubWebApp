@@ -137,7 +137,7 @@ public class UsersController : Controller
 
      // POST: Users/Delete/5
     [HttpPost, ActionName("Delete")]
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(string id)
     {

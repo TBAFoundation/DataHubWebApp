@@ -67,7 +67,7 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                     <ul class="navbar-nav ms-auto">
-                        @if (User.Identity.IsAuthenticated)
+                        @if (User?.Identity?.IsAuthenticated?? false)
                         {
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="Users" asp-action="Profile">Profile</a>
