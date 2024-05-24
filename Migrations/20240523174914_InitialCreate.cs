@@ -47,6 +47,9 @@ namespace DataHUBWebApplication.Migrations
                     Password = table.Column<string>(type: "longtext", nullable: false),
                     UserType = table.Column<int>(type: "int", nullable: false),
                     GenderType = table.Column<int>(type: "int", nullable: false),
+                    Address = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: false),
+                    LevelOfEducation = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
+                    DateOfBirth = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: true)
                 },

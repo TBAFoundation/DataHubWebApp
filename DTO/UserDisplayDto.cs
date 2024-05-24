@@ -24,6 +24,15 @@ public class UserDisplayDto
     [StringLength(255, ErrorMessage = "Email cannot exceed 255 characters.")]
     public string Email { get; set; } = default!;
 
+    [Display(Name = "Phonenumber")]
+    [Required(ErrorMessage = "Phonenumber is required.")]
+    [StringLength(13, ErrorMessage = "Phonenumber cannot exceed 13 characters.")]
+    public string PhoneNumber { get; set; } = default!;
+
+    [Display(Name = "Gender")]
+    [Required(ErrorMessage = "Gender type is required.")]
+    public GenderType GenderType { get; set; }
+
     [Display(Name = "User Type")]
     [Required(ErrorMessage = "User type is required.")]
     public UserType UserType { get; set; }

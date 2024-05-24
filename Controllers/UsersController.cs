@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DataHUBWebApplication.DTO;
 using DataHUBWebApplication.Interface;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DataHUBWebApplication.Controllers;
 
@@ -80,7 +81,18 @@ public class UsersController : Controller
         return View(signInDto);
     }
 
+     // POST: Users/SignOut
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> SignOut()
+    {
+        await _userService.SignOutAsync();
+        return RedirectToAction(nameof(Index));
+    }
+
+
     // GET: Users/Edit/5
+    [Authorize]
     public async Task<IActionResult> Edit(string id)
     {
         var user = await _userService.GetUserDetailsAsync(id);
@@ -93,6 +105,7 @@ public class UsersController : Controller
 
     // POST: Users/Edit/5
     [HttpPost]
+    [Authorize]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(string id, UserUpdateDto userDto)
     {
@@ -110,6 +123,7 @@ public class UsersController : Controller
     }
 
     // GET: Users/Delete/5
+    [Authorize]
     public async Task<IActionResult> Delete(string id)
     {
         var user = await _userService.GetUserDetailsAsync(id);
@@ -121,8 +135,9 @@ public class UsersController : Controller
         return View(user);
     }
 
-    // POST: Users/Delete/5
+     // POST: Users/Delete/5
     [HttpPost, ActionName("Delete")]
+    [Authorize]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(string id)
     {

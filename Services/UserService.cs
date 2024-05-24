@@ -1,7 +1,10 @@
-﻿using DataHUBWebApplication.Data;
+﻿using System.Security.Claims;
+using DataHUBWebApplication.Data;
 using DataHUBWebApplication.DTO;
 using DataHUBWebApplication.Interface;
 using DataHUBWebApplication.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataHUBWebApplication.Services;
@@ -9,10 +12,12 @@ namespace DataHUBWebApplication.Services;
 public class UserService : IUserService
 {
     private readonly DataHubContext _context;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public UserService(DataHubContext context)
+    public UserService(DataHubContext context, IHttpContextAccessor httpContextAccessor)
     {
         _context = context;
+        _httpContextAccessor = httpContextAccessor;
     }
 
     public async Task<IEnumerable<UserDisplayDto>> GetUsersAsync()
@@ -83,7 +88,32 @@ public class UserService : IUserService
     public async Task<bool> SignInAsync(UserSignInDto signInDto)
     {
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == signInDto.Email && u.Password == signInDto.Password);
-        return user != null;
+        
+        if (user != null)
+        {
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, user.Email),
+                new Claim(ClaimTypes.NameIdentifier, user.UserId),
+                new Claim(ClaimTypes.Role, user.UserType.ToString())
+            };
+
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var authProperties = new AuthenticationProperties
+            {
+                IsPersistent = true
+            };
+
+            await _httpContextAccessor.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
+
+            return true;
+        }
+
+        return false;
+    }
+    public async Task SignOutAsync()
+    {
+        await _httpContextAccessor.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
     }
 
     public async Task UpdateUserAsync(string id, UserUpdateDto userDto)
@@ -129,7 +159,7 @@ public class UserService : IUserService
             do
             {
                 var randomDigits = random.Next(1000, 9999); // Generates a 4-digit random number
-                userId = $"DH/24/{randomDigits}";
+                userId = $"DH-24-{randomDigits}";
             } while (await context.Users.AnyAsync(u => u.UserId == userId));
 
             return userId;

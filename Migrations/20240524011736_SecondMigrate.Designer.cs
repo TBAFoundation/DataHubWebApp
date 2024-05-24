@@ -3,6 +3,7 @@ using System;
 using DataHUBWebApplication.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataHUBWebApplication.Migrations
 {
     [DbContext(typeof(DataHubContext))]
-    partial class DataHubContextModelSnapshot : ModelSnapshot
+    [Migration("20240524011736_SecondMigrate")]
+    partial class SecondMigrate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

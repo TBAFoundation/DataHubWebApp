@@ -2,21 +2,31 @@ using Microsoft.EntityFrameworkCore;
 using DataHUBWebApplication.Data;
 using DataHUBWebApplication.Interface;
 using DataHUBWebApplication.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
 // Add services to the container.
 builder.Services.AddDbContext<DataHubContext>(options =>
     options.UseMySQL(builder.Configuration.GetConnectionString("DHConnectionStrings")
     ?? throw new InvalidOperationException("Connection string 'DHConnectionStrings' not found.")));
 
-builder.Services.AddControllersWithViews();
-
+// Add authentication services
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Users/SignIn";
+        options.LogoutPath = "/Users/SignOut";
+    });
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IUserService, UserService>();
 // Add application services
 // builder.Services.AddScoped<ICourseService, CourseService>();
 // builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
 // builder.Services.AddScoped<IMaterialService, MaterialService>();
-builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 
@@ -29,7 +39,9 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
 app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
