@@ -88,7 +88,7 @@ public class UserService : IUserService
     public async Task<bool> SignInAsync(UserSignInDto signInDto)
     {
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == signInDto.Email && u.Password == signInDto.Password);
-        
+
         if (user != null)
         {
             var claims = new List<Claim>

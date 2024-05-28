@@ -46,6 +46,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DELL/Desktop/MGQSC\#CLASS/DataHUBWebApplication/Views/Course/Pricing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXFByaWNpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Desktop/MGQSC\#CLASS/DataHUBWebApplication/Views/Course/_CatalogDropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXF9DYXRhbG9nRHJvcGRvd24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DELL/Desktop/MGQSC\#CLASS/DataHUBWebApplication/Views/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -96,6 +104,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DELL/Desktop/MGQSC\#CLASS/DataHUBWebApplication/Views/Materials/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Desktop/MGQSC\#CLASS/DataHUBWebApplication/Views/Shared/Components/CoursesDropdown/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ291cnNlc0Ryb3Bkb3duXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DELL/Desktop/MGQSC\#CLASS/DataHUBWebApplication/Views/Shared/Error.cshtml]

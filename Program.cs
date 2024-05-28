@@ -23,8 +23,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IUserService, UserService>();
-// Add application services
-// builder.Services.AddScoped<ICourseService, CourseService>();
+builder.Services.AddScoped<ICourseService, CourseService>();
 // builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
 // builder.Services.AddScoped<IMaterialService, MaterialService>();
 

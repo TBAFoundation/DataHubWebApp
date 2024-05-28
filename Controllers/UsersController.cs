@@ -81,7 +81,7 @@ public class UsersController : Controller
         return View(signInDto);
     }
 
-     // POST: Users/SignOut
+    // POST: Users/SignOut
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> SignOut()
@@ -135,7 +135,7 @@ public class UsersController : Controller
         return View(user);
     }
 
-     // POST: Users/Delete/5
+    // POST: Users/Delete/5
     [HttpPost, ActionName("Delete")]
     [Authorize(Roles = "Admin")]
     [ValidateAntiForgeryToken]
