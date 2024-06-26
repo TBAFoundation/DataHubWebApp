@@ -1,7 +1,0 @@
-﻿@model IEnumerable<DataHUBWebApplication.Models.Course>
-
-<h6 class="dropdown-header">Courses</h6>
-@foreach (var course in Model)
-{
-    <a class="dropdown-item" asp-area="" asp-controller="Course" asp-action="Details" asp-route-id="@course.CourseID">@course.CourseName</a>
-}

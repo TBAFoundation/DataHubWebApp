@@ -27,10 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="Views\_CatalogDropdown.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
@@ -46,15 +42,6 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Views\Shared\Components\CoursesDropdown\Default.cshtml" />
-    <_ContentIncludedByDefault Remove="Views\_CatalogDropdown.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views\_CatalogDropdown.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Views\_CatalogDropdown.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
